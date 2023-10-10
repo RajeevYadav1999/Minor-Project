@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Poppins:wght@200;400;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    color: inherit;
+    text-decoration: none!important;
+}
+body{
+    font-family: "poppins", sans-serif;
+}
+.header{
+    margin-block: 1rem;
+    background-color: #fff;
+}
+.nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+ul{
+    list-style: none;
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+}
+.logo{
+    height: 45px;
+}
+.search-box{
+    border: 1px solid #0000004d;
+    padding: 10px;
+    border-radius: 40px;
+    font-family: inherit;
+}
+.search{
+    display: flex;
+    width: 15%;
+    justify-content: space-between;
+    align-items: center;
+}
+#btnSearch{
+    background: transparent;
+    border: none;
+
+}
+#btnSearch img{
+    height: 30px;
+    object-fit: contain;
+}
+
+.slide-container{
+    height: 80vh;
+    width: 80%;
+    margin-inline: auto;
+    position: relative;
+    margin-block: 3rem;
+}
+
+.img{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    opacity: 0;
+    transition: 300ms opacity ease-in-out;
+}
+
+.active {
+    opacity: 1;
+}
+
+
+.slide-container img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-inline: 5rem;
+    gap: 15px;
+}
+
+.items_container{
+    height: 300px;
+    width: 300px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.items_container img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.items_container .cart {
+    font: inherit;
+    background-color: #ffffffc7;
+    border-radius: 5px;
+    border-color: #0000005b;
+    height: 50px;
+    padding: 10px;
+    position: absolute;
+
+    left: 35%;
+    bottom: -10px;
+}
+
+.cart:hover {
+    background-color: #cecece;
+    cursor: pointer;
+}
+
+.contacts_icon{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-block: 10px;
+}
+
+.contacts_icon img{
+    height: 30px;
+}
+
+.aboutus{
+    display: flex;
+    justify-content: space-around;
+}
+
+.block{
+    display: flex;
+    flex-direction: column;
+    margin-inline: 1rem;
+}
+
+footer{
+    margin-block: 2rem;
+    background-color: #0000002f;
+    color: hsl(4, 88%, 3%);
+    margin-inline: 1rem;
+}
+
+.footer_heading{
+    text-align: center;
+    margin-block: 1rem;
+    background: #000;
+    color: #fff;
+}
+
+.footer_contacts{
+    text-align: center;
+    margin-block: 10px;
+}
